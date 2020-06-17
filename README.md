@@ -23,7 +23,7 @@ $ npm install
 This project uses dotenv to load environment variables. Required and optional .env variables and example values:
 ```
 NODE_ENV=development
-SPACE_ID=izij9rskv5y1
+SPACE_ID=<your space id>
 ACCESS_TOKEN=<your access token>
 PREVIEW_TOKEN=<your preview token>
 PREVIEW=false
