@@ -1,5 +1,7 @@
 Small authentication and caching proxy service for [Contentful](http://contentful.com)'s [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/) (CDA) written for and using http and redis. Useful for front-end's connecting to Contentful and for people who have problems with their request cap.
 
+Forked from https://github.com/felixjung/contentful-proxy and updated to use http server, redis caching, environment variables and work with Contentful's updates. Uses Winston to log pretty messages to console. Also added prettier, eslint and nodemon for development.
+
 ## Installation
 
 This project uses yarn, so run the following from the terminal:
