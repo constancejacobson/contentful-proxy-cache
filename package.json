@@ -1,0 +1,36 @@
+{
+  "name": "contentful-proxy-cache",
+  "version": "0.1.0",
+  "description": "A caching proxy for the Contentful Delivery API. Forked from https://github.com/felixjung/contentful-proxy",
+  "main": "index.js",
+  "author": "Constance Jacobson <c9jacobs@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "export NODE_ENV=development && nodemon"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "http-proxy": "^1.16.2",
+    "redis": "^3.0.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "nodemon": "^2.0.4",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
+}
